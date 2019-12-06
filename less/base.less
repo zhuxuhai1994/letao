@@ -1,0 +1,43 @@
+//这个css文件是用来实现初始化效果的css文件
+//初始化样式
+*{padding: 0;margin: 0;box-sizing: border-box;}
+a,ins,u{text-decoration: none;    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+li{list-style:none;}
+strong,b{font-weight: normal;}
+em,i{font-style: normal;}
+button{outline: none;border: none;cursor: pointer;}
+.clearfix::after {content: '';display: block; clear: both;height: 0;visibility: hidden;}
+// 为了兼容IE6,7
+.clearfix{*zoom:1;}
+
+//版心
+.w{width: 1200px;margin: 0 auto;}
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+// 声明给屏幕设置宽度
+html{font-size:50px;}
+.decWidth(@w){
+  @media screen and (min-width:@w){
+     html{
+      font-size: @w/15px;
+     }
+   }
+}
+// 调用函数
+.decWidth(320px);
+.decWidth(360px);
+.decWidth(375px);
+.decWidth(384px);
+.decWidth(400px);
+.decWidth(414px);
+.decWidth(424px);
+.decWidth(480px);
+.decWidth(540px);
+.decWidth(720px);
+.decWidth(750px);
